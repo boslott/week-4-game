@@ -1,0 +1,148 @@
+/*
+      styles.css for "Week-4-Game" - RPG Game
+      BootCamp at UNC Homework Assignment 4
+      September 23, 2017
+      Bo Slott
+
+    -------------------------------------------- 
+*/
+
+
+/*  Typography */
+
+/*  Structure */
+
+  /*  Characters  */
+
+    .chars {
+      width: 15%;
+      height: 15%;
+      margin: 0 2%;
+      display: none;
+      position: relative;
+    }
+
+    .chars-inPlay {
+      width: 20%;
+    }
+
+  /* Player Choose Character */
+
+    .player-choose-init {
+      text-align: center;
+      margin-top: 5%;
+    }
+
+    .player-choose-init-header {
+      margin-bottom: 4%;
+    }
+
+    #chooseChar {
+      font-size: 36px;
+      display: none;
+    }
+
+
+
+  /* Player Choose Enemy */
+
+    .player-choose-enemy {
+      text-align: center;
+      margin-top: 5%;
+      display: none;
+    }
+
+    .player-choose-enemy-header {
+      margin-bottom: 4%;
+    }
+
+    #chooseEnemy {
+      font-size: 36px;
+    }
+
+    .player-choose-enemy-opts {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+    }
+
+    .enemy-imgs {
+      width: 15%;
+      height: 15%;
+      margin: 0 2%;
+      position: relative;
+
+
+  /* Game Board */
+
+    /*  Main Game Board */
+
+      .game-board-grid {
+        background-image: url("../images/dinoBG.jpeg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 10% 0;
+        margin: 50px auto 0;
+        border-style: solid;
+        border-color: #000;
+        border-width: 1px;
+      }
+
+      .game-board-topHalf {
+        o/*utline: 2px dotted red;*/
+      }
+
+      .hero-home {
+       text-align: center;
+      }
+
+      .hero-home img {
+        /*background-color: rgba(255, 255, 255, 0.6);
+        border-style: solid;
+        border-color: #fff;
+        border-width: 2px;
+        border-radius: 100%;*/
+      }
+
+      .enemy-territory {
+        text-align: center;
+      }
+
+      .enemy-territory img {
+        /*background-color: rgba(17, 55, 226, 0.6);
+        border-style: solid;
+        border-color: #1107e2;
+        border-width: 2px;
+        border-radius: 100%;*/
+        box-shadow: 10px 10px 5px #fff;
+        border-radius: 100%;
+        filter: saturate(8);
+      }
+
+      .game-board-bottomHalf {
+
+      }
+
+      .game-board-bottomHalf img {
+        outline: 2px dotted red;
+      }
+
+    /*  Game Board Sub-Panel Row  */
+
+      .defeated-enemies-display {
+        display: flex;
+        justify-content: flex-end;
+        margin: 0 10%;
+      }
+
+      .game-board-sub-panel h3 {
+        margin-right: 5px;
+      }
+
+      .game-board-sub-panel img {
+        margin: 5px;
+      }
+
+
+/*
+-- General Use

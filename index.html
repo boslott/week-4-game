@@ -1,0 +1,126 @@
+<!-- 
+      index.html for "Week-4-Game" - RPG Game
+      BootCamp at UNC Homework Assignment 4
+      September 23, 2017
+      Bo Slott
+ 
+ This assignment got away from and just didn't seem to work out. I believe I ran into several lexical scope issues and, at this moment, can't seem to make the enemy images clickable.
+
+ The next step after choosing the enemy is the the enemy-option images to hide and the gameboard appear. The player character and the current-enemy appear along with the attack button.
+
+ As per the gameplay instructions, the player clicks the attack button and the health points and attack power points are recalculated after each attack.
+
+ The character that loses all health points first will disappear. If that is the enemy, the defeated-enemy appears in the "extinct" area and the player chooses a new enemy to battle. If the player loses, then it's game over.
+
+
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en-us" />
+ <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" contents="width=device-width, initial-scale=1" />
+
+  <!-- Reset All Styles -->
+  <link rel="stylesheet" href="assets/css/reset.css" />
+
+  <!-- Bootstrap 3.3.7 CDN -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+
+  <!-- RPG Game CSS -->
+  <link rel="stylesheet" href="assets/css/styles.css" />
+
+   <title>RGP Game</title>
+ </head>
+ <body>
+
+  <div class="container">
+
+    <!-- Player Chooses Character -->
+    <div class="row player-choose-init">
+
+      <div class="row player-choose-init-header">
+        <p id="chooseChar">Choose Your Character</p>
+      </div>
+
+      <div class="row player-choose-init-opts">
+        <img id="char1" class="chars" src="assets/images/dino1-rpgGame.png" />
+        <img id="char2" class="chars" src="assets/images/dino2-rpgGame.png" />
+        <img id="char3" class="chars" src="assets/images/dino3-rpgGame.png" />
+        <img id="char4" class="chars" src="assets/images/dino4-rpgGame.png" />
+      </div>
+
+    </div>  <!-- Close Player Choose Character -->
+
+    <!-- Player Chooses Enemy -->
+    <div class="row player-choose-enemy">
+
+      <div class="row player-choose-enemy-header">
+        <p id="chooseEnemy">Choose Your Enemy</p>
+      </div>
+      
+      <!-- Options Will Render During Gameplay -->
+      <div class="row player-choose-enemy-opts" id="stillStanding">
+      </div>
+
+    </div>  <!-- Close Player Choose Enemy -->
+
+  </div>  <!-- Close Container -->
+
+
+
+
+<!-- Game Board (under construction) -->
+<!-- <div class="container game-board-container">
+
+  <div class="row game-board-grid">
+
+    <div class="row game-board-topHalf">
+
+      <div class="col-sm-6 hero-home">
+        <img class="chars-inPlay" src="assets/images/dino2-rpgGame.png" />
+      </div>
+
+      <div class="col-sm-6 enemy-territory">
+        <img class="chars-inPlay" src="assets/images/dino2-rpgGame.png" />
+        <img class="chars-inPlay" src="assets/images/dino2-rpgGame.png" />
+        <img class="chars-inPlay" src="assets/images/dino2-rpgGame.png" />
+      </div>
+    </div>
+
+    <div class="row game-board-bottomHalf">
+      <img id="char4" class="chars" src="assets/images/dino4-rpgGame.png" />
+    </div>
+
+  </div>
+
+  <div class="row game-board-sub-panel">
+
+    <div class="defeated-enemies-display">
+      <h3>Extinct:</h3>
+      <img id="char4" class="chars" src="assets/images/dino4-rpgGame.png" />
+      <img id="char4" class="chars" src="assets/images/dino4-rpgGame.png" />
+      <img id="char4" class="chars" src="assets/images/dino4-rpgGame.png" />
+    </div>
+  </div>
+
+</div> -->
+
+
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+  <!-- Bootstrap javascript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <!-- Object Constructors -->
+  <script src="assets/javascript/objectConstructors.js"></script>
+
+  <!-- Dinosaur Characters File -->
+  <script src="assets/javascript/dinoCharacters.js"></script>
+
+  <!-- Game javascript sheet -->
+  <script src="assets/javascript/game.js"></script>
+
+ </body>
+ </html>
